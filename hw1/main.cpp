@@ -4,27 +4,26 @@
 #include <cstdlib>
 #include <cstring>
 #include "container.h"
-using namespace std;
 
 void err_msg_command() {
-    cout << "Incorrect command line.\n"
-            "Expected:\n"
-            "command -f inputFile outputFile1 outputFile2\n"
-            "or:\n"
-            "command -n number outputFile1 outputFile2\n";
+    std::cout << "Incorrect command line.\n"
+                 "Expected:\n"
+                 "command -f inputFile outputFile1 outputFile2\n"
+                 "or:\n"
+                 "command -n number outputFile1 outputFile2\n";
 }
 
 void err_msg_qual() {
-    cout << "Incorrect qualifier value.\n"
-            "Expected:\n"
-            "command -f inputFile outputFile1 outputFile2\n"
-            "or:\n"
-            "command -n number outputFile1 outputFile2\n";
+    std::cout << "Incorrect qualifier value.\n"
+                 "Expected:\n"
+                 "command -f inputFile outputFile1 outputFile2\n"
+                 "or:\n"
+                 "command -n number outputFile1 outputFile2\n";
 }
 
 void err_fig_parse(int size) {
-    cout << "Incorrect number of figures = " << size
-         << ". Set 0 < number <= 10000\n";
+    std::cout << "Incorrect number of figures = " << size
+              << ". Set 0 < number <= 10000\n";
 }
 int main(int argc, char *argv[]) {
     if (argc != 5) {
@@ -35,7 +34,7 @@ int main(int argc, char *argv[]) {
     init(c);
 
     if (!strcmp(argv[1], "-f")) {
-        ifstream ifst(argv[2]);
+        std::ifstream ifst(argv[2]);
         in(c, ifst);
     } else if (!strcmp(argv[1], "-n")) {
         auto size = atoi(argv[2]);
@@ -49,11 +48,11 @@ int main(int argc, char *argv[]) {
         err_msg_qual();
         return -2;
     }
-    ofstream ofst1(argv[3]);
+    std::ofstream ofst1(argv[3]);
     ofst1 << "Filled containers:\n";
     output(c, ofst1);
 
-    ofstream ofst2(argv[4]);
+    std::ofstream ofst2(argv[4]);
     ofst2 << "Perimeter sum = " << perimeter_sum(c) << "\n";
     clear(c);
     return 0;

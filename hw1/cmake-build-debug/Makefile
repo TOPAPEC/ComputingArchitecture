@@ -169,6 +169,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rectangle.o: rectangle.cpp.o
+
+.PHONY : rectangle.o
+
+# target to build an object file
+rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/rectangle.cpp.o
+.PHONY : rectangle.cpp.o
+
+rectangle.i: rectangle.cpp.i
+
+.PHONY : rectangle.i
+
+# target to preprocess a source file
+rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/rectangle.cpp.i
+.PHONY : rectangle.cpp.i
+
+rectangle.s: rectangle.cpp.s
+
+.PHONY : rectangle.s
+
+# target to generate assembly for a file
+rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/rectangle.cpp.s
+.PHONY : rectangle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -181,6 +208,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rectangle.o"
+	@echo "... rectangle.i"
+	@echo "... rectangle.s"
 .PHONY : help
 
 

@@ -5,6 +5,7 @@
 #ifndef HW1__SHAPE_H_
 #define HW1__SHAPE_H_
 
+#include <fstream>
 #include "rectangle.h"
 #include "triangle.h"
 #include "circle.h"
@@ -20,9 +21,9 @@ struct shape {
     purple
   };
   enum key {
-    rectangle,
-    triangle,
-    circle
+    Rectangle,
+    Triangle,
+    Circle
   };
   key k;
   union {
@@ -32,11 +33,11 @@ struct shape {
   };
 };
 
-shape *in(ifstream &ifdt);
+shape *in(std::ifstream &ifdt);
 
 shape *in_rnd();
 
-void output(shape &s, ofstream &ofst);
+void output(shape &s, std::ofstream &ofst);
 
 double perimeter(shape &s);
 
