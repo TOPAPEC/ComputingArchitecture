@@ -80,7 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.h">
+			<Option target="hw1"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/main.cpp">
+			<Option target="hw1"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.h">
+			<Option target="hw1"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.h">
 			<Option target="hw1"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/CMakeLists.txt">
