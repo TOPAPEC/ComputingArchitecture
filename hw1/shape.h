@@ -25,6 +25,7 @@ struct shape {
     Triangle,
     Circle
   };
+  colors color;
   key k;
   union {
     rectangle r;

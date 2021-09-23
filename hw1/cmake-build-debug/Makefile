@@ -142,6 +142,33 @@ hw1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/build
 .PHONY : hw1/fast
 
+container.o: container.cpp.o
+
+.PHONY : container.o
+
+# target to build an object file
+container.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/container.cpp.o
+.PHONY : container.cpp.o
+
+container.i: container.cpp.i
+
+.PHONY : container.i
+
+# target to preprocess a source file
+container.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/container.cpp.i
+.PHONY : container.cpp.i
+
+container.s: container.cpp.s
+
+.PHONY : container.s
+
+# target to generate assembly for a file
+container.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/container.cpp.s
+.PHONY : container.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -196,6 +223,33 @@ rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/rectangle.cpp.s
 .PHONY : rectangle.cpp.s
 
+triangle.o: triangle.cpp.o
+
+.PHONY : triangle.o
+
+# target to build an object file
+triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/triangle.cpp.o
+.PHONY : triangle.cpp.o
+
+triangle.i: triangle.cpp.i
+
+.PHONY : triangle.i
+
+# target to preprocess a source file
+triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/triangle.cpp.i
+.PHONY : triangle.cpp.i
+
+triangle.s: triangle.cpp.s
+
+.PHONY : triangle.s
+
+# target to generate assembly for a file
+triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/triangle.cpp.s
+.PHONY : triangle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,12 +259,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hw1"
+	@echo "... container.o"
+	@echo "... container.i"
+	@echo "... container.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... rectangle.o"
 	@echo "... rectangle.i"
 	@echo "... rectangle.s"
+	@echo "... triangle.o"
+	@echo "... triangle.i"
+	@echo "... triangle.s"
 .PHONY : help
 
 

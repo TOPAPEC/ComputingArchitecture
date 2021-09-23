@@ -7,7 +7,7 @@
 #include <fstream>
 
 struct circle {
-  int x_center, y_center
+  int x_center, y_center, radius;
 };
 
 void in(circle &t, std::ifstream &ifst);

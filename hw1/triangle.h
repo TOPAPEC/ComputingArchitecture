@@ -7,6 +7,7 @@
 
 #include <fstream>
 
+
 struct triangle {
   int x1, x2, x3, y1, y2, y3;
 };

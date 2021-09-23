@@ -83,6 +83,9 @@
 		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.h">
 			<Option target="hw1"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.cpp">
+			<Option target="hw1"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.h">
 			<Option target="hw1"/>
 		</Unit>
@@ -96,6 +99,9 @@
 			<Option target="hw1"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.h">
+			<Option target="hw1"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.cpp">
 			<Option target="hw1"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.h">
