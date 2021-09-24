@@ -1,0 +1,8 @@
+Filled containers:
+Container contains 6 elements.
+0: It is a Circle: x_center = 8, y_center = 11, radius = 12. Perimeter = 75.3982. Color = 0
+1: It is a Circle: x_center = 15, y_center = 17, radius = 5. Perimeter = 31.4159. Color = 0
+2: It is Triangle: x1 = 3, x2 = 8, x3 = 6, y1 = 14, y2 = 13, y3 = 13. Perimeter = 10.2613. Color = 0
+3: It is a Circle: x_center = 16, y_center = 8, radius = 4. Perimeter = 25.1327. Color = 0
+4: It is Rectangle: x_upper_left = 11, y_upper_left = 8, x_lower_right = 10, y_lower_right = 6. Perimeter = 2. Color = 0
+5: It is Triangle: x1 = 3, x2 = 11, x3 = 8, y1 = 1, y2 = 17, y3 = 3. Perimeter = 37.5915. Color = 0

@@ -29,14 +29,22 @@ bool check_if_triangle_correct(triangle &t) {
 }
 
 void in_rnd(triangle & t) {
+    t.x1 = rand() % 20 + 1;
+    t.y1 = rand() % 20 + 1;
+
     do {
-        t.x1 = rand() % 20 + 1;
         t.x2 = rand() % 20 + 1;
-        t.x3 = rand() % 20 + 1;
-        t.y1 = rand() % 20 + 1;
         t.y2 = rand() % 20 + 1;
+    } while (t.x2 == t.x1 && t.y1 == t.y2);
+
+    do {
+        t.x3 = rand() % 20 + 1;
         t.y3 = rand() % 20 + 1;
-    } while(check_if_triangle_correct(t));
+    } while (!check_if_triangle_correct(t));
+}
+
+double perimeter(triangle &t) {
+    return double(get_side1(t) + get_side2(t) + get_side3(t));
 }
 
 void output(triangle &t, std::ofstream &ofst) {
@@ -44,10 +52,8 @@ void output(triangle &t, std::ofstream &ofst) {
     ", x2 = " << t.x2 << ", x3 = " << t.x3 <<
     ", y1 = " << t.y1 << ", y2 = " << t.y2 <<
     ", y3 = " << t.y3 << ". Perimeter = " <<
-    perimeter(t) << "\n";
+    perimeter(t);
 }
 
-double perimeter(triangle &t) {
-    return double(get_side1(t) + get_side2(t) + get_side3(t));
-}
+
 

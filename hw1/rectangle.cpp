@@ -18,12 +18,13 @@ void in_rnd(rectangle &r) {
     } while (r.x_lower_right >= r.x_upper_left || r.y_lower_right >= r.y_upper_left);
 }
 
-void output(rectangle &r, std::ofstream &ofst) {
-    ofst << "It is Rectangle: x_upper_left = " << r.x_upper_left << ", y_upper_left = "
-         << r.y_upper_left << ", x_lower_right = " << r.x_lower_right << ", y_lower_right = "
-         << r.y_lower_right << "\n";
-}
-
 double perimeter(rectangle &r) {
     return 2 * ((r.x_upper_left - r.x_lower_right) + (r.y_upper_left - r.y_upper_left));
 }
+
+void output(rectangle &r, std::ofstream &ofst) {
+    ofst << "It is Rectangle: x_upper_left = " << r.x_upper_left << ", y_upper_left = "
+         << r.y_upper_left << ", x_lower_right = " << r.x_lower_right << ", y_lower_right = "
+         << r.y_lower_right << ". Perimeter = " << perimeter(r);
+}
+

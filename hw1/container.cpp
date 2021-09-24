@@ -45,4 +45,5 @@ double perimeter_sum(container &c) {
     for (int i = 0; i < c.length; ++i) {
         sum += perimeter(*(c.cont[i]));
     }
+    return sum;
 }

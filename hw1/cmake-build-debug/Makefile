@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/TOPAPEC/AppData/Local/JetBrains/CLion2021.1/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/TOPAPEC/AppData/Local/JetBrains/CLion2021.1/cygwin_cmake/bin/cmake.exe -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1
+CMAKE_SOURCE_DIR = /Users/danbugrienko/Documents/ComputingArchitecture/hw1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/TOPAPEC/AppData/Local/JetBrains/CLion2021.1/cygwin_cmake/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/TOPAPEC/AppData/Local/JetBrains/CLion2021.1/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,33 @@ hw1: cmake_check_build_system
 hw1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/build
 .PHONY : hw1/fast
+
+circle.o: circle.cpp.o
+
+.PHONY : circle.o
+
+# target to build an object file
+circle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/circle.cpp.o
+.PHONY : circle.cpp.o
+
+circle.i: circle.cpp.i
+
+.PHONY : circle.i
+
+# target to preprocess a source file
+circle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/circle.cpp.i
+.PHONY : circle.cpp.i
+
+circle.s: circle.cpp.s
+
+.PHONY : circle.s
+
+# target to generate assembly for a file
+circle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/circle.cpp.s
+.PHONY : circle.cpp.s
 
 container.o: container.cpp.o
 
@@ -223,6 +250,33 @@ rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/rectangle.cpp.s
 .PHONY : rectangle.cpp.s
 
+shape.o: shape.cpp.o
+
+.PHONY : shape.o
+
+# target to build an object file
+shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/shape.cpp.o
+.PHONY : shape.cpp.o
+
+shape.i: shape.cpp.i
+
+.PHONY : shape.i
+
+# target to preprocess a source file
+shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/shape.cpp.i
+.PHONY : shape.cpp.i
+
+shape.s: shape.cpp.s
+
+.PHONY : shape.s
+
+# target to generate assembly for a file
+shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/shape.cpp.s
+.PHONY : shape.cpp.s
+
 triangle.o: triangle.cpp.o
 
 .PHONY : triangle.o
@@ -259,6 +313,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hw1"
+	@echo "... circle.o"
+	@echo "... circle.i"
+	@echo "... circle.s"
 	@echo "... container.o"
 	@echo "... container.i"
 	@echo "... container.s"
@@ -268,6 +325,9 @@ help:
 	@echo "... rectangle.o"
 	@echo "... rectangle.i"
 	@echo "... rectangle.s"
+	@echo "... shape.o"
+	@echo "... shape.i"
+	@echo "... shape.s"
 	@echo "... triangle.o"
 	@echo "... triangle.i"
 	@echo "... triangle.s"
