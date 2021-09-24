@@ -11,6 +11,7 @@
 #include "circle.h"
 
 struct shape {
+
   enum colors {
     red,
     orange,
@@ -20,6 +21,7 @@ struct shape {
     dark_blue,
     purple
   };
+
   enum key {
     Rectangle,
     Triangle,
@@ -34,9 +36,11 @@ struct shape {
   };
 };
 
-shape *in(std::ifstream &ifdt);
+shape *in(std::ifstream &ifst);
 
 shape *in_rnd();
+
+static char* colors_to_string(int index);
 
 void output(shape &s, std::ofstream &ofst);
 

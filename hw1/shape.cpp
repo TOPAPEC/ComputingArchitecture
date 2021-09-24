@@ -30,6 +30,7 @@ shape* in(std::ifstream &ifst) {
 
 shape *in_rnd() {
     shape *sp = new shape;
+    sp->color = static_cast<shape::colors>(rand() % 7);
     auto k = rand() % 3 + 1;
     switch(k) {
         case 1:
@@ -49,19 +50,25 @@ shape *in_rnd() {
     }
 }
 
+static char* colors_to_string(int index) {
+    static char *colors_string[7] = {"red", "orange", "yellow", "green", "blue",
+                                           "dark_blue", "purple"};
+    return colors_string[index];
+}
+
 void output(shape &s, std::ofstream &ofst) {
     switch(s.k) {
         case shape::Rectangle:
             output(s.r, ofst);
-            ofst << ". Color = " << s.color << "\n";
+            ofst << ". Color = " << colors_to_string(s.color) << "\n";
             return;
         case shape::Triangle:
             output(s.t, ofst);
-            ofst << ". Color = " << s.color << "\n";
+            ofst << ". Color = " << colors_to_string(s.color) << "\n";
             return;
         case shape::Circle:
             output(s.c, ofst);
-            ofst << ". Color = " << s.color << "\n";
+            ofst << ". Color = " << colors_to_string(s.color) << "\n";
             return;
         default:
             ofst << "Incorrect figure!" << "\n";
@@ -80,3 +87,5 @@ double perimeter(shape &s) {
             return 0.0;
     }
 }
+
+

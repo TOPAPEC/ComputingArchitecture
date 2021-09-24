@@ -18,7 +18,8 @@ void clear(container &c) {
 
 void in(container &c, std::ifstream &ifst) {
     while (!ifst.eof()) {
-        if ((c.cont[c.length] = in(ifst)) != nullptr) {
+        c.cont[c.length] = in(ifst);
+        if (c.cont[c.length] != nullptr) {
             c.length++;
         }
     }

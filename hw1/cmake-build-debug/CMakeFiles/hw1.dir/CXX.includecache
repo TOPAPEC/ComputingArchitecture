@@ -23,6 +23,10 @@ cstdlib
 -
 cstring
 -
+chrono
+-
+time.h
+-
 container.h
 /Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.h
 

@@ -19,7 +19,7 @@ void in_rnd(rectangle &r) {
 }
 
 double perimeter(rectangle &r) {
-    return 2 * ((r.x_upper_left - r.x_lower_right) + (r.y_upper_left - r.y_upper_left));
+    return 2 * (abs(r.x_upper_left - r.x_lower_right) + abs(r.y_upper_left - r.y_lower_right));
 }
 
 void output(rectangle &r, std::ofstream &ofst) {
