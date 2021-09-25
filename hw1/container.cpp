@@ -48,3 +48,26 @@ double perimeter_sum(container &c) {
     }
     return sum;
 }
+
+void shaker_sort(container &c) {
+    shape *arr = *(c.cont);
+    int control = c.length - 1;
+    int left  = 0;
+    int right = c.length - 1;
+    do {
+        for (int i = left; i < right; i++) {
+            if (perimeter(arr[i]) > perimeter(arr[i + 1])) {
+                std::swap(arr[i], arr[i + 1]);
+                control = i;
+            }
+        }
+        right = control;
+        for (int i = right; i > left; i--) {
+            if (perimeter(arr[i]) < perimeter(arr[i - 1])) {
+                std::swap(arr[i], arr[i - 1]);
+                control = i;
+            }
+        }
+        left = control;
+    } while (left < right);
+}

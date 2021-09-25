@@ -2,8 +2,6 @@
 #include <ctime>
 #include <cstdlib>
 #include <cstring>
-#include <chrono>
-#include <time.h>
 #include "container.h"
 
 void err_msg_command() {
@@ -27,9 +25,6 @@ void err_fig_parse(int size) {
               << ". Set 0 < number <= 10000\n";
 }
 int main(int argc, char *argv[]) {
-    std::chrono::time_point< std::chrono::system_clock > now = std::chrono::system_clock::now();
-
-    auto start = now.time_since_epoch();
     if (argc != 5) {
         err_msg_command();
         return -1;
@@ -57,6 +52,8 @@ int main(int argc, char *argv[]) {
         return -2;
     }
     printf("Filled containers\n");
+    printf("Sorting\n");
+    shaker_sort(c);
     printf("Printing to %s\n", argv[3]);
     std::ofstream ofst1(argv[3]);
     ofst1 << "Filled containers:\n";
@@ -66,9 +63,6 @@ int main(int argc, char *argv[]) {
     ofst2 << "Perimeter sum = " << perimeter_sum(c) << "\n";
     clear(c);
     printf("Finished\n");
-    now = std::chrono::system_clock::now();
 
-    auto end = now.time_since_epoch();
-    std::cout << (std::chrono::duration_cast<std::chrono::microseconds>(end-start)).count();
     return 0;
 }

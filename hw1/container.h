@@ -25,4 +25,6 @@ void output(container &c, std::ofstream &ofst);
 
 double perimeter_sum(container &c);
 
+void shaker_sort(container &c);
+
 #endif //HW1__CONTAINER_H_
