@@ -8,124 +8,112 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hw1">
-				<Option output="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/hw1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/hw1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/../../../../../../include/c++/11.1.0"/>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/../../../../../../include/c++/11.1.0/x86_64-apple-darwin19"/>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/../../../../../../include/c++/11.1.0/backward"/>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/include"/>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/include-fixed"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw1"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw1"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hw1/fast">
-				<Option output="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/hw1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/hw1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/../../../../../../include/c++/11.1.0"/>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/../../../../../../include/c++/11.1.0/x86_64-apple-darwin19"/>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/../../../../../../include/c++/11.1.0/backward"/>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/include"/>
-					<Add directory="/usr/local/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/x86_64-apple-darwin19/11.1.0/include-fixed"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw1/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/circle.cpp">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.cpp">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/circle.h">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.h">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.cpp">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.cpp">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.h">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.h">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/main.cpp">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/main.cpp">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/rectangle.cpp">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.cpp">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/rectangle.h">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.h">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/shape.cpp">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.cpp">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/shape.h">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.h">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/triangle.cpp">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.cpp">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/triangle.h">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.h">
 			<Option target="hw1"/>
 		</Unit>
-		<Unit filename="/Users/danbugrienko/Documents/ComputingArchitecture/hw1/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/TOPAPEC/AppData/Local/JetBrains/CLion2021.1/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /cygdrive/c/Users/TOPAPEC/AppData/Local/JetBrains/CLion2021.1/cygwin_cmake/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/danbugrienko/Documents/ComputingArchitecture/hw1
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hw1.dir/depend.make
@@ -78,81 +78,81 @@ include CMakeFiles/hw1.dir/flags.make
 
 CMakeFiles/hw1.dir/main.cpp.o: CMakeFiles/hw1.dir/flags.make
 CMakeFiles/hw1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hw1.dir/main.cpp.o"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/main.cpp.o -c /Users/danbugrienko/Documents/ComputingArchitecture/hw1/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hw1.dir/main.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/main.cpp.o -c /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/main.cpp
 
 CMakeFiles/hw1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw1.dir/main.cpp.i"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danbugrienko/Documents/ComputingArchitecture/hw1/main.cpp > CMakeFiles/hw1.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/main.cpp > CMakeFiles/hw1.dir/main.cpp.i
 
 CMakeFiles/hw1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw1.dir/main.cpp.s"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danbugrienko/Documents/ComputingArchitecture/hw1/main.cpp -o CMakeFiles/hw1.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/main.cpp -o CMakeFiles/hw1.dir/main.cpp.s
 
 CMakeFiles/hw1.dir/rectangle.cpp.o: CMakeFiles/hw1.dir/flags.make
 CMakeFiles/hw1.dir/rectangle.cpp.o: ../rectangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hw1.dir/rectangle.cpp.o"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/rectangle.cpp.o -c /Users/danbugrienko/Documents/ComputingArchitecture/hw1/rectangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hw1.dir/rectangle.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/rectangle.cpp.o -c /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.cpp
 
 CMakeFiles/hw1.dir/rectangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw1.dir/rectangle.cpp.i"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danbugrienko/Documents/ComputingArchitecture/hw1/rectangle.cpp > CMakeFiles/hw1.dir/rectangle.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.cpp > CMakeFiles/hw1.dir/rectangle.cpp.i
 
 CMakeFiles/hw1.dir/rectangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw1.dir/rectangle.cpp.s"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danbugrienko/Documents/ComputingArchitecture/hw1/rectangle.cpp -o CMakeFiles/hw1.dir/rectangle.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.cpp -o CMakeFiles/hw1.dir/rectangle.cpp.s
 
 CMakeFiles/hw1.dir/container.cpp.o: CMakeFiles/hw1.dir/flags.make
 CMakeFiles/hw1.dir/container.cpp.o: ../container.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hw1.dir/container.cpp.o"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/container.cpp.o -c /Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hw1.dir/container.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/container.cpp.o -c /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.cpp
 
 CMakeFiles/hw1.dir/container.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw1.dir/container.cpp.i"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.cpp > CMakeFiles/hw1.dir/container.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.cpp > CMakeFiles/hw1.dir/container.cpp.i
 
 CMakeFiles/hw1.dir/container.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw1.dir/container.cpp.s"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.cpp -o CMakeFiles/hw1.dir/container.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.cpp -o CMakeFiles/hw1.dir/container.cpp.s
 
 CMakeFiles/hw1.dir/triangle.cpp.o: CMakeFiles/hw1.dir/flags.make
 CMakeFiles/hw1.dir/triangle.cpp.o: ../triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hw1.dir/triangle.cpp.o"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/triangle.cpp.o -c /Users/danbugrienko/Documents/ComputingArchitecture/hw1/triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hw1.dir/triangle.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/triangle.cpp.o -c /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.cpp
 
 CMakeFiles/hw1.dir/triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw1.dir/triangle.cpp.i"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danbugrienko/Documents/ComputingArchitecture/hw1/triangle.cpp > CMakeFiles/hw1.dir/triangle.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.cpp > CMakeFiles/hw1.dir/triangle.cpp.i
 
 CMakeFiles/hw1.dir/triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw1.dir/triangle.cpp.s"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danbugrienko/Documents/ComputingArchitecture/hw1/triangle.cpp -o CMakeFiles/hw1.dir/triangle.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.cpp -o CMakeFiles/hw1.dir/triangle.cpp.s
 
 CMakeFiles/hw1.dir/shape.cpp.o: CMakeFiles/hw1.dir/flags.make
 CMakeFiles/hw1.dir/shape.cpp.o: ../shape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hw1.dir/shape.cpp.o"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/shape.cpp.o -c /Users/danbugrienko/Documents/ComputingArchitecture/hw1/shape.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hw1.dir/shape.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/shape.cpp.o -c /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.cpp
 
 CMakeFiles/hw1.dir/shape.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw1.dir/shape.cpp.i"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danbugrienko/Documents/ComputingArchitecture/hw1/shape.cpp > CMakeFiles/hw1.dir/shape.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.cpp > CMakeFiles/hw1.dir/shape.cpp.i
 
 CMakeFiles/hw1.dir/shape.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw1.dir/shape.cpp.s"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danbugrienko/Documents/ComputingArchitecture/hw1/shape.cpp -o CMakeFiles/hw1.dir/shape.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.cpp -o CMakeFiles/hw1.dir/shape.cpp.s
 
 CMakeFiles/hw1.dir/circle.cpp.o: CMakeFiles/hw1.dir/flags.make
 CMakeFiles/hw1.dir/circle.cpp.o: ../circle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hw1.dir/circle.cpp.o"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/circle.cpp.o -c /Users/danbugrienko/Documents/ComputingArchitecture/hw1/circle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hw1.dir/circle.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw1.dir/circle.cpp.o -c /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.cpp
 
 CMakeFiles/hw1.dir/circle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw1.dir/circle.cpp.i"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danbugrienko/Documents/ComputingArchitecture/hw1/circle.cpp > CMakeFiles/hw1.dir/circle.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.cpp > CMakeFiles/hw1.dir/circle.cpp.i
 
 CMakeFiles/hw1.dir/circle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw1.dir/circle.cpp.s"
-	/usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danbugrienko/Documents/ComputingArchitecture/hw1/circle.cpp -o CMakeFiles/hw1.dir/circle.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.cpp -o CMakeFiles/hw1.dir/circle.cpp.s
 
 # Object files for target hw1
 hw1_OBJECTS = \
@@ -166,19 +166,19 @@ hw1_OBJECTS = \
 # External object files for target hw1
 hw1_EXTERNAL_OBJECTS =
 
-hw1: CMakeFiles/hw1.dir/main.cpp.o
-hw1: CMakeFiles/hw1.dir/rectangle.cpp.o
-hw1: CMakeFiles/hw1.dir/container.cpp.o
-hw1: CMakeFiles/hw1.dir/triangle.cpp.o
-hw1: CMakeFiles/hw1.dir/shape.cpp.o
-hw1: CMakeFiles/hw1.dir/circle.cpp.o
-hw1: CMakeFiles/hw1.dir/build.make
-hw1: CMakeFiles/hw1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable hw1"
+hw1.exe: CMakeFiles/hw1.dir/main.cpp.o
+hw1.exe: CMakeFiles/hw1.dir/rectangle.cpp.o
+hw1.exe: CMakeFiles/hw1.dir/container.cpp.o
+hw1.exe: CMakeFiles/hw1.dir/triangle.cpp.o
+hw1.exe: CMakeFiles/hw1.dir/shape.cpp.o
+hw1.exe: CMakeFiles/hw1.dir/circle.cpp.o
+hw1.exe: CMakeFiles/hw1.dir/build.make
+hw1.exe: CMakeFiles/hw1.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable hw1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hw1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/hw1.dir/build: hw1
+CMakeFiles/hw1.dir/build: hw1.exe
 
 .PHONY : CMakeFiles/hw1.dir/build
 
@@ -187,6 +187,6 @@ CMakeFiles/hw1.dir/clean:
 .PHONY : CMakeFiles/hw1.dir/clean
 
 CMakeFiles/hw1.dir/depend:
-	cd /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/danbugrienko/Documents/ComputingArchitecture/hw1 /Users/danbugrienko/Documents/ComputingArchitecture/hw1 /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug /Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1 /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1 /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug /cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hw1.dir/depend
 

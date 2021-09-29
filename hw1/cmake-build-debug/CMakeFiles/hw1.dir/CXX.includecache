@@ -6,17 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/circle.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.h
 fstream
 -
 
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.h
 shape.h
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/shape.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.h
 
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/main.cpp
-iostream
--
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/main.cpp
 ctime
 -
 cstdlib
@@ -24,23 +22,23 @@ cstdlib
 cstring
 -
 container.h
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.h
 
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/rectangle.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.h
 fstream
 -
 
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/shape.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.h
 fstream
 -
 rectangle.h
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/rectangle.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.h
 triangle.h
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/triangle.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.h
 circle.h
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/circle.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.h
 
-/Users/danbugrienko/Documents/ComputingArchitecture/hw1/triangle.h
+/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.h
 fstream
 -
 

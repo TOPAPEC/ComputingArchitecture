@@ -1,0 +1,12 @@
+Filled containers:
+Container contains 10 elements.
+0: It is Triangle: x1 = 9, x2 = 15, x3 = 5, y1 = 10, y2 = 11, y3 = 16. Perimeter = 24.4742. Color = dark_blue
+1: It is a Circle: x_center = 6, y_center = 7, radius = 4. Perimeter = 25.1327. Color = orange
+2: It is Triangle: x1 = 5, x2 = 8, x3 = 19, y1 = 9, y2 = 15, y3 = 12. Perimeter = 32.4278. Color = green
+3: It is Triangle: x1 = 20, x2 = 4, x3 = 3, y1 = 6, y2 = 4, y3 = 8. Perimeter = 37.3649. Color = yellow
+4: It is Triangle: x1 = 18, x2 = 7, x3 = 12, y1 = 15, y2 = 17, y3 = 4. Perimeter = 37.6387. Color = purple
+5: It is Triangle: x1 = 16, x2 = 1, x3 = 12, y1 = 6, y2 = 14, y3 = 2. Perimeter = 38.9357. Color = yellow
+6: It is Triangle: x1 = 18, x2 = 6, x3 = 8, y1 = 6, y2 = 18, y3 = 1. Perimeter = 45.2681. Color = blue
+7: It is Rectangle: x_upper_left = 26, y_upper_left = 23, x_lower_right = 2, y_lower_right = 5. Perimeter = 84. Color = blue
+8: It is Rectangle: x_upper_left = 34, y_upper_left = 28, x_lower_right = 10, y_lower_right = 9. Perimeter = 86. Color = green
+9: It is Rectangle: x_upper_left = 37, y_upper_left = 28, x_lower_right = 14, y_lower_right = 7. Perimeter = 88. Color = blue

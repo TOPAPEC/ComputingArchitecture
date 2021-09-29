@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/circle.cpp" "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/circle.cpp.o"
-  "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/container.cpp" "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/container.cpp.o"
-  "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/main.cpp" "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/main.cpp.o"
-  "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/rectangle.cpp" "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/rectangle.cpp.o"
-  "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/shape.cpp" "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/shape.cpp.o"
-  "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/triangle.cpp" "/Users/danbugrienko/Documents/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/triangle.cpp.o"
+  "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/circle.cpp" "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/circle.cpp.o"
+  "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/container.cpp" "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/container.cpp.o"
+  "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/main.cpp" "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/main.cpp.o"
+  "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/rectangle.cpp" "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/rectangle.cpp.o"
+  "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/shape.cpp" "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/shape.cpp.o"
+  "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/triangle.cpp" "/cygdrive/c/Users/TOPAPEC/CLionProjects/ComputingArchitecture/hw1/cmake-build-debug/CMakeFiles/hw1.dir/triangle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
