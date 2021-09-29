@@ -28,10 +28,11 @@ shape* in(std::ifstream &ifst) {
     }
 }
 
-shape *in_rnd() {
-    shape *sp = new shape;
+shape* in_rnd() {
+    shape *sp;
+    sp = new shape;
     sp->color = static_cast<shape::colors>(rand() % 7);
-    auto k = rand() % 3 + 1;
+    int k = rand() % 3 + 1;
     switch(k) {
         case 1:
             sp->k = shape::Rectangle;

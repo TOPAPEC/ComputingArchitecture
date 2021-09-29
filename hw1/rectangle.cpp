@@ -9,12 +9,12 @@ void in(rectangle &r, std::ifstream &ifst) {
 }
 
 void in_rnd(rectangle &r) {
-    r.x_upper_left = rand() % 20 + 1;
-    r.y_upper_left = rand() % 20 + 1;
+    r.x_upper_left = rand() % 20 + 21;
+    r.y_upper_left = rand() % 20 + 21;
     // Гарантируется корректность заданной фигуры
     do {
-        r.x_lower_right = rand() % 40 + 1;
-        r.y_lower_right = rand() % 40 + 1;
+        r.x_lower_right = rand() % 20 + 1;
+        r.y_lower_right = rand() % 20 + 1;
     } while (r.x_lower_right >= r.x_upper_left || r.y_lower_right >= r.y_upper_left);
 }
 

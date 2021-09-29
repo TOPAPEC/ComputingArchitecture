@@ -1,28 +1,23 @@
-#include <iostream>
 #include <ctime>
 #include <cstdlib>
 #include <cstring>
 #include "container.h"
 
 void err_msg_command() {
-    std::cout << "Incorrect command line.\n"
-                 "Expected:\n"
-                 "command -f inputFile outputFile1 outputFile2\n"
-                 "or:\n"
-                 "command -n number outputFile1 outputFile2\n";
+    printf("Incorrect command line.\nExpected:\ncommand -f inputFile"
+           " outputFile1 outputFile2\nor:\ncommand -n number outputFile1 outputFile2\n");
 }
 
 void err_msg_qual() {
-    std::cout << "Incorrect qualifier value.\n"
+    printf("Incorrect qualifier value.\n"
                  "Expected:\n"
                  "command -f inputFile outputFile1 outputFile2\n"
                  "or:\n"
-                 "command -n number outputFile1 outputFile2\n";
+                 "command -n number outputFile1 outputFile2\n");
 }
 
 void err_fig_parse(int size) {
-    std::cout << "Incorrect number of figures = " << size
-              << ". Set 0 < number <= 10000\n";
+    printf("Incorrect number of figures = %d. Set 0 < number <= 10000\n", size);
 }
 int main(int argc, char *argv[]) {
     if (argc != 5) {
