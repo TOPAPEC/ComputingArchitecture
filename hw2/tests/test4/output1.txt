@@ -1,0 +1,4 @@
+Filled containers:
+Container contains 2 elements.
+0: It is Triangle: x1 = 1, x2 = 3, x3 = 2, y1 = 1, y2 = 2, y3 = 5. Perimeter = 9.52145. Color = orange
+1: It is Triangle: x1 = 2, x2 = 4, x3 = 4, y1 = 5, y2 = 5, y3 = 1. Perimeter = 10.4721. Color = yellow

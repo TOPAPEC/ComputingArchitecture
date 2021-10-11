@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/hw2.dir/main.cpp.o CMakeFiles/hw2.dir/container.cpp.o CMakeFiles/hw2.dir/shape.cpp.o CMakeFiles/hw2.dir/rectangle.cpp.o CMakeFiles/hw2.dir/triangle.cpp.o CMakeFiles/hw2.dir/circle.cpp.o -o hw2.exe -Wl,--out-implib,libhw2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

@@ -1,0 +1,9 @@
+Filled containers:
+Container contains 7 elements.
+0 : It is Circle: x_center = 2, y_center = 6, radius = 1. Perimeter = 6.283185. Color = dark_blue
+1 : It is Circle: x_center = 1, y_center = 6, radius = 4. Perimeter = 25.132741. Color = blue
+2 : It is Circle: x_center = 0, y_center = 0, radius = 5. Perimeter = 31.415927. Color = red
+3 : It is Circle: x_center = 4, y_center = 7, radius = 9. Perimeter = 56.548668. Color = purple
+4 : It is Circle: x_center = 0, y_center = 2, radius = 15. Perimeter = 94.247780. Color = yellow
+5 : It is Circle: x_center = 1, y_center = 0, radius = 51. Perimeter = 320.442451. Color = orange
+6 : It is Circle: x_center = 1, y_center = 4, radius = 52. Perimeter = 326.725636. Color = green
