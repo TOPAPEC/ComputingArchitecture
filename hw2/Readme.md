@@ -12,7 +12,7 @@
 
 Структурная схема изучаемой архитектуры ВС с размещенной на ней разработанной программы.
 
-![Scheme](https://github.com/TOPAPEC/ComputingArchitecture/blob/master/materials/scheme.png?raw=true)
+![Scheme](materials/scheme.png?raw=true)
 
 # Метрики 
 
