@@ -1,9 +1,11 @@
+import random
 import sys
 import string
-
-import triangle, rectangle, circle, container
+import triangle, Rectangle, circle, container
+from datetime import datetime
 
 if __name__ == '__main__':
+    random.seed(datetime.now())
     cont = container()
     if len(sys.argv) != 5:
         print('Wrong commandline arguments! Can\'t proceed further.')
