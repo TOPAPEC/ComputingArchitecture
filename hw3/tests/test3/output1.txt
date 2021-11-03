@@ -1,0 +1,5 @@
+Filled containers:
+Container contains 3 elements.
+0: It is Rectangle: x_upper_left = 1, y_upper_left = 1, x_lower_right = 2, y_lower_right = 0. Perimeter = 4. Color = purple
+1: It is Rectangle: x_upper_left = 0, y_upper_left = 4, x_lower_right = 2, y_lower_right = 1. Perimeter = 10. Color = red
+2: It is Rectangle: x_upper_left = 3, y_upper_left = 3, x_lower_right = 10, y_lower_right = 0. Perimeter = 20. Color = green
