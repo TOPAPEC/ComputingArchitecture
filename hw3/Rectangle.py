@@ -23,5 +23,10 @@ class Rectangle(Figure):
                    f'x_lower_right = {self.x_lower_right}, y_lower_right = {self.y_lower_right}. '
                    f'Perimeter = {self.perimeter()}. Color = {self.color}\n')
 
+    def print(self) -> str:
+        return (f'It is Rectangle: x_upper_left = {self.x_upper_left}, y_upper_left = {self.y_upper_left}, '
+                f'x_lower_right = {self.x_lower_right}, y_lower_right = {self.y_lower_right}. '
+                f'Perimeter = {self.perimeter()}. Color = {self.color}\n')
+
     def perimeter(self) -> float:
         return 2 * (abs(self.x_upper_left - self.x_lower_right) + abs(self.y_upper_left - self.y_lower_right))

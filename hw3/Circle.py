@@ -21,5 +21,9 @@ class Circle(Figure):
         fptr.write(f'It is Circle: x_center = {self.x_center}, y_center = {self.y_center}, radius = {self.radius}. '
                    f'Perimeter = {self.perimeter()}. Color = {self.color}\n')
 
+    def print(self) -> str:
+        return (f'It is Circle: x_center = {self.x_center}, y_center = {self.y_center}, radius = {self.radius}. '
+         f'Perimeter = {self.perimeter()}. Color = {self.color}\n')
+
     def perimeter(self) -> float:
         return 2.0 * math.pi * self.radius;
