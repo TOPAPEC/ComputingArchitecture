@@ -22,7 +22,6 @@ void clear(container &c) {
 
 void in(container &c, std::ifstream &ifst) {
     while (!ifst.eof()) {
-        printf("Parrse\n");
         c.cont[c.length] = in(ifst);
         if (c.cont[c.length] != NULL) {
             c.cont[c.length]->per = perimeter(*(c.cont[c.length]));
