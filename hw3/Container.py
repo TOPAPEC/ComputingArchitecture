@@ -13,6 +13,7 @@ class Container:
     def input_random(self, num_figures) -> None:
         for i in range(num_figures):
             self.cont.append(FigureFabric.generic_init_random())
+            print(self.cont[-1].print())
 
     def output(self, fptr) -> None:
         fptr.write(f"Container contains {len(self.cont)} elements.\n")

@@ -8,7 +8,7 @@ if __name__ == '__main__':
     random.seed(None)
     cont = Container()
     if len(sys.argv) != 5:
-        print('Wrong commandline arguments! Can\'t proceed further.')
+        print('Wrong command line arguments! Can\'t proceed further.')
         exit()
     elif sys.argv[1] == '-f':
         input_file = sys.argv[2]
