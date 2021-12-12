@@ -61,6 +61,7 @@ void *eat_think_repeat(void *arg) {
         }
         auto *phil_array = new pthread_t[phil_num];
         for (int i = 0; i < phil_num; ++i) {
+            cout << "New thread " + to_string(i) + "\n";
             pthread_create(&phil_array[i], NULL, &eat_think_repeat, &i);
         }
         this_thread::sleep_for(chrono::milliseconds(dinner_duration * 1000));
