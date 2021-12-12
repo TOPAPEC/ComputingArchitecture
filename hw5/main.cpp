@@ -25,7 +25,7 @@ void *eat_think_repeat(void *arg) {
             }
             int thinking_duration = rand() % 100 + 1;
 //            pthread_mutex_lock(&output_mutex);
-            cout << phil_id << " thinks " << thinking_duration << "ms\n";
+//            cout << phil_id << " thinks " << thinking_duration << "ms\n";
 //            pthread_mutex_unlock(&output_mutex);
             this_thread::sleep_for(chrono::milliseconds(thinking_duration));
 //            cout << phil_id << " waiting for " << phil_id << " fork.\n";
