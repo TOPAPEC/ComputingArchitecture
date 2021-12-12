@@ -32,7 +32,7 @@ void *eat_think_repeat(void *arg) {
         for (;;) {
             std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
             if (std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() > arguments->time_to_eat) {
-                return NULL;
+                pthread_exit(0);
             }
             int thinking_duration = rand() % 100 + 1;
 //            pthread_mutex_lock(&output_mutex);
