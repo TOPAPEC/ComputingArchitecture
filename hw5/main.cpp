@@ -15,12 +15,23 @@ pthread_mutex_t output_mutex;
 pthread_mutex_t terminate_mutex;
 void run(int phil_num, int dinner_duration);
 
+struct args {
+    args(int ttl, int id) {
+        time_to_eat = ttl;
+        phil_id = id;
+    }
+    int time_to_eat;
+    int phil_id;
+};
 // Arg - philosopher id.
 void *eat_think_repeat(void *arg) {
-    int phil_id = *(int *) (arg);
+    args *arguments = ((struct args *) (arg));
+    std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+
     try {
         for (;;) {
-            if (terminate_checkpoint) {
+            std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+            if (std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() > arguments->time_to_eat) {
                 return NULL;
             }
             int thinking_duration = rand() % 100 + 1;
@@ -29,16 +40,16 @@ void *eat_think_repeat(void *arg) {
 //            pthread_mutex_unlock(&output_mutex);
             this_thread::sleep_for(chrono::milliseconds(thinking_duration));
 //            cout << phil_id << " waiting for " << phil_id << " fork.\n";
-            sem_wait(&sems[phil_id]);
+            sem_wait(&sems[arguments->phil_id]);
 //            pthread_mutex_lock(&output_mutex);
 //            cout << phil_id << " grabbed " << phil_id << " fork. Waiting for " << phil_id + 1 << " fork.\n";
 //            pthread_mutex_unlock(&output_mutex);
-            sem_wait(&sems[phil_id + 1]);
+            sem_wait(&sems[arguments->phil_id + 1]);
 //            pthread_mutex_lock(&output_mutex);
 //            cout << phil_id << " got both forks! Beginning eating immediately!\n";
 //            pthread_mutex_unlock(&output_mutex);
-            sem_post(&sems[phil_id]);
-            sem_post(&sems[phil_id + 1]);
+            sem_post(&sems[arguments->phil_id]);
+            sem_post(&sems[arguments->phil_id + 1]);
         }
     }
     catch (exception ex) {
@@ -73,7 +84,7 @@ void *eat_think_repeat(void *arg) {
 //            cout << "New thread " + to_string(i) + "\n";
 //            pthread_mutex_unlock(&output_mutex);
             phil_array[i] = new pthread_t;
-            pthread_create(phil_array[i], NULL, &eat_think_repeat, &i);
+            pthread_create(phil_array[i], NULL, &eat_think_repeat, (new args(dinner_duration * 1000, i)));
         }
         this_thread::sleep_for(chrono::milliseconds(dinner_duration * 1000));
 //        pthread_mutex_lock(&terminate_mutex);
