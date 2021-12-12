@@ -13,9 +13,6 @@ sem_t *sems;
 pthread_mutex_t output_mutex;
 void run(int phil_num, int dinner_duration);
 
-
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "EndlessLoop"
 // Arg - philosopher id.
 void *eat_think_repeat(void *arg) {
     int phil_id = *(int *) (arg);
@@ -37,7 +34,6 @@ void *eat_think_repeat(void *arg) {
         sem_post(&sems[phil_id + 1]);
     }
 }
-#pragma clang diagnostic pop
 
 int main() {
     int phil_num;
