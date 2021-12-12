@@ -67,12 +67,13 @@ void *eat_think_repeat(void *arg) {
         for (int i = 0; i < phil_num; ++i) {
             sem_init(&sems[i], 1, 1);
         }
-        auto *phil_array = new pthread_t[phil_num];
+        auto **phil_array = new pthread_t*[phil_num];
         for (int i = 0; i < phil_num; ++i) {
 //            pthread_mutex_lock(&output_mutex);
 //            cout << "New thread " + to_string(i) + "\n";
 //            pthread_mutex_unlock(&output_mutex);
-            pthread_create(&phil_array[i], NULL, &eat_think_repeat, &i);
+            phil_array[i] = new pthread_t;
+            pthread_create(phil_array[i], NULL, &eat_think_repeat, &i);
         }
         this_thread::sleep_for(chrono::milliseconds(dinner_duration * 1000));
 //        pthread_mutex_lock(&terminate_mutex);
@@ -80,7 +81,7 @@ void *eat_think_repeat(void *arg) {
 //        pthread_mutex_unlock(&terminate_mutex);
         try {
             for (int i = 0; i < phil_num; ++i) {
-                pthread_join(phil_array[i], NULL);
+                pthread_join(*phil_array[i], NULL);
             }
         } catch (exception ex) {
 //            pthread_mutex_lock(&output_mutex);
