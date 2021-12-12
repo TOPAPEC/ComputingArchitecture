@@ -24,19 +24,19 @@ void *eat_think_repeat(void *arg) {
                 return NULL;
             }
             int thinking_duration = rand() % 100 + 1;
-            pthread_mutex_lock(&output_mutex);
+//            pthread_mutex_lock(&output_mutex);
             cout << phil_id << " thinks " << thinking_duration << "ms\n";
-            pthread_mutex_unlock(&output_mutex);
+//            pthread_mutex_unlock(&output_mutex);
             this_thread::sleep_for(chrono::milliseconds(thinking_duration));
 //            cout << phil_id << " waiting for " << phil_id << " fork.\n";
             sem_wait(&sems[phil_id]);
-            pthread_mutex_lock(&output_mutex);
+//            pthread_mutex_lock(&output_mutex);
 //            cout << phil_id << " grabbed " << phil_id << " fork. Waiting for " << phil_id + 1 << " fork.\n";
-            pthread_mutex_unlock(&output_mutex);
+//            pthread_mutex_unlock(&output_mutex);
             sem_wait(&sems[phil_id + 1]);
-            pthread_mutex_lock(&output_mutex);
+//            pthread_mutex_lock(&output_mutex);
 //            cout << phil_id << " got both forks! Beginning eating immediately!\n";
-            pthread_mutex_unlock(&output_mutex);
+//            pthread_mutex_unlock(&output_mutex);
             sem_post(&sems[phil_id]);
             sem_post(&sems[phil_id + 1]);
         }
