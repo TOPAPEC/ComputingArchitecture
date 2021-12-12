@@ -6,6 +6,8 @@
 #include <chrono>
 #include <thread>
 #include <signal.h>
+#include <sys/time.h>
+#include <random>
 
 using namespace std;
 
@@ -15,6 +17,9 @@ pthread_mutex_t output_mutex;
 pthread_mutex_t terminate_mutex;
 void run(int phil_num, int dinner_duration);
 int phil_num;
+std::random_device dev;
+std::mt19937 rng(dev());
+std::uniform_int_distribution<std::mt19937::result_type> dist6(0,100);
 
 struct args {
     args(int ttl, int id) {
@@ -27,28 +32,37 @@ struct args {
 // Arg - philosopher id.
 void *eat_think_repeat(void *arg) {
     args *arguments = ((struct args *) (arg));
-    std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+    timeval t0, t1, dt;
+    gettimeofday(&t0, NULL);
     for (;;) {
         std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-        if (std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() > arguments->time_to_eat) {
+        gettimeofday(&t1, NULL);
+        timersub(&t1, &t0, &dt);
+        if (dt.tv_sec * 1000 > arguments->time_to_eat) {
             pthread_exit(0);
         }
-        int thinking_duration = rand() % 100 + 1;
+        int thinking_duration = static_cast<int>(dist6(rng));
+        int fork1 = (arguments->phil_id + 1) % phil_num, fork2 = arguments->phil_id;
+        if (fork1 > fork2) {
+            swap(fork1,fork2);
+        }
         pthread_mutex_lock(&output_mutex);
         cout << arguments->phil_id << " thinks " << thinking_duration << "ms\n";
         pthread_mutex_unlock(&output_mutex);
         this_thread::sleep_for(chrono::milliseconds(thinking_duration));
+        pthread_mutex_lock(&output_mutex);
         cout << arguments->phil_id << " waiting for " << arguments->phil_id << " fork.\n";
-        sem_wait(sems[arguments->phil_id]);
+        pthread_mutex_unlock(&output_mutex);
+        sem_wait(sems[fork1]);
         pthread_mutex_lock(&output_mutex);
         cout << arguments->phil_id << " grabbed " << arguments->phil_id << " fork. Waiting for " << arguments->phil_id + 1 << " fork.\n";
         pthread_mutex_unlock(&output_mutex);
-        sem_wait(sems[(arguments->phil_id + 1) % phil_num]);
+        sem_wait(sems[fork2]);
         pthread_mutex_lock(&output_mutex);
         cout << arguments->phil_id << " got both forks! Beginning eating immediately!\n";
         pthread_mutex_unlock(&output_mutex);
-        sem_post(sems[arguments->phil_id]);
-        sem_post(sems[(arguments->phil_id + 1) % phil_num]);
+        sem_post(sems[fork1]);
+        sem_post(sems[fork2]);
     }
 }
 
