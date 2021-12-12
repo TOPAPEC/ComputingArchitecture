@@ -57,7 +57,7 @@ void *eat_think_repeat(void *arg) {
     }
     void run(int phil_num, int dinner_duration) {
         for (int i = 0; i < phil_num; ++i) {
-            sem_init(&sems[i], 0, 1);
+            sem_init(&sems[i], 1, 1);
         }
         auto *phil_array = new pthread_t[phil_num];
         for (int i = 0; i < phil_num; ++i) {
