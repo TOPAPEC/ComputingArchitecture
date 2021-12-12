@@ -18,25 +18,30 @@ void run(int phil_num, int dinner_duration);
 // Arg - philosopher id.
 void *eat_think_repeat(void *arg) {
     int phil_id = *(int *) (arg);
-    for (;;) {
-        if (terminate_checkpoint) {
-            return NULL;
+    try {
+        for (;;) {
+            if (terminate_checkpoint) {
+                return NULL;
+            }
+            int thinking_duration = rand() % 100 + 1;
+            pthread_mutex_lock(&output_mutex);
+            cout << phil_id << " thinks " << thinking_duration << "ms\n";
+            cout << phil_id << " waiting for " << phil_id << " fork.\n";
+            pthread_mutex_unlock(&output_mutex);
+            sem_wait(&sems[phil_id]);
+            pthread_mutex_lock(&output_mutex);
+            cout << phil_id << " grabbed " << phil_id << " fork. Waiting for " << phil_id + 1 << " fork.\n";
+            pthread_mutex_unlock(&output_mutex);
+            sem_wait(&sems[phil_id + 1]);
+            pthread_mutex_lock(&output_mutex);
+            cout << phil_id << " got both forks! Beginning eating immediately!\n";
+            pthread_mutex_unlock(&output_mutex);
+            sem_post(&sems[phil_id]);
+            sem_post(&sems[phil_id + 1]);
         }
-        int thinking_duration = rand() % 100 + 1;
-        pthread_mutex_lock(&output_mutex);
-        cout << phil_id << " thinks " << thinking_duration << "ms\n";
-        cout << phil_id << " waiting for " << phil_id << " fork.\n";
-        pthread_mutex_unlock(&output_mutex);
-        sem_wait(&sems[phil_id]);
-        pthread_mutex_lock(&output_mutex);
-        cout << phil_id << " grabbed " << phil_id << " fork. Waiting for " << phil_id + 1 << " fork.\n";
-        pthread_mutex_unlock(&output_mutex);
-        sem_wait(&sems[phil_id + 1]);
-        pthread_mutex_lock(&output_mutex);
-        cout << phil_id << " got both forks! Beginning eating immediately!\n";
-        pthread_mutex_unlock(&output_mutex);
-        sem_post(&sems[phil_id]);
-        sem_post(&sems[phil_id + 1]);
+    }
+    catch (exception ex) {
+        cout << to_string(phil_id) + " posted segabort\n";
     }
 }
 
