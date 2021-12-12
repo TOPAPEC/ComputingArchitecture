@@ -9,7 +9,7 @@
 
 using namespace std;
 
-sem_t *sems;
+sem_t **sems;
 bool terminate_checkpoint;
 pthread_mutex_t output_mutex;
 pthread_mutex_t terminate_mutex;
@@ -40,16 +40,16 @@ void *eat_think_repeat(void *arg) {
 //            pthread_mutex_unlock(&output_mutex);
             this_thread::sleep_for(chrono::milliseconds(thinking_duration));
 //            cout << phil_id << " waiting for " << phil_id << " fork.\n";
-            sem_wait(&sems[arguments->phil_id]);
+            sem_wait(sems[arguments->phil_id]);
 //            pthread_mutex_lock(&output_mutex);
 //            cout << phil_id << " grabbed " << phil_id << " fork. Waiting for " << phil_id + 1 << " fork.\n";
 //            pthread_mutex_unlock(&output_mutex);
-            sem_wait(&sems[arguments->phil_id + 1]);
+            sem_wait(sems[arguments->phil_id + 1]);
 //            pthread_mutex_lock(&output_mutex);
 //            cout << phil_id << " got both forks! Beginning eating immediately!\n";
 //            pthread_mutex_unlock(&output_mutex);
-            sem_post(&sems[arguments->phil_id]);
-            sem_post(&sems[arguments->phil_id + 1]);
+            sem_post(sems[arguments->phil_id]);
+            sem_post(sems[arguments->phil_id + 1]);
         }
     }
     catch (exception ex) {
@@ -69,14 +69,15 @@ void *eat_think_repeat(void *arg) {
         cin >> dinner_duration;
         pthread_mutex_init(&output_mutex, NULL);
         pthread_mutex_init(&terminate_mutex, NULL);
-        sems = new sem_t[phil_num];
+        sems = new sem_t*[phil_num];
         run(phil_num, dinner_duration);
         cout << "Dinner is over!\n";
-
+        return 0;
     }
     void run(int phil_num, int dinner_duration) {
         for (int i = 0; i < phil_num; ++i) {
-            sem_init(&sems[i], 1, 1);
+            sems[i] = new sem_t;
+            sem_init(sems[i], 1, 1);
         }
         auto **phil_array = new pthread_t*[phil_num];
         for (int i = 0; i < phil_num; ++i) {
