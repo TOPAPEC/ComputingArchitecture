@@ -14,6 +14,7 @@ bool terminate_checkpoint;
 pthread_mutex_t output_mutex;
 pthread_mutex_t terminate_mutex;
 void run(int phil_num, int dinner_duration);
+int phil_num;
 
 struct args {
     args(int ttl, int id) {
@@ -44,12 +45,12 @@ void *eat_think_repeat(void *arg) {
 //            pthread_mutex_lock(&output_mutex);
 //            cout << phil_id << " grabbed " << phil_id << " fork. Waiting for " << phil_id + 1 << " fork.\n";
 //            pthread_mutex_unlock(&output_mutex);
-            sem_wait(sems[arguments->phil_id + 1]);
+            sem_wait(sems[(arguments->phil_id + 1) % phil_num]);
 //            pthread_mutex_lock(&output_mutex);
 //            cout << phil_id << " got both forks! Beginning eating immediately!\n";
 //            pthread_mutex_unlock(&output_mutex);
             sem_post(sems[arguments->phil_id]);
-            sem_post(sems[arguments->phil_id + 1]);
+            sem_post(sems[(arguments->phil_id + 1) % phil_num]);
         }
     }
     catch (exception ex) {
@@ -60,7 +61,6 @@ void *eat_think_repeat(void *arg) {
 }
 
     int main() {
-        int phil_num;
         int dinner_duration;
         terminate_checkpoint = false;
         cout << "Enter philosopher number:";
