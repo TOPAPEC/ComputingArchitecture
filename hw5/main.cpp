@@ -77,8 +77,14 @@ void *eat_think_repeat(void *arg) {
         pthread_mutex_lock(&terminate_mutex);
         terminate_checkpoint = true;
         pthread_mutex_unlock(&terminate_mutex);
-        for (int i = 0; i < phil_num; ++i) {
-            pthread_join(phil_array[i], NULL);
+        try {
+            for (int i = 0; i < phil_num; ++i) {
+                pthread_join(phil_array[i], NULL);
+            }
+        } catch (exception ex) {
+            pthread_mutex_lock(&output_mutex);
+            cout << "loop segabort\n";
+            pthread_mutex_unlock(&output_mutex);
         }
         cout << "All philosophers stopped eating.\n";
     }
