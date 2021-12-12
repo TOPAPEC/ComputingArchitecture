@@ -42,9 +42,9 @@ void *eat_think_repeat(void *arg) {
         }
     }
     catch (exception ex) {
-        pthread_mutex_lock(&output_mutex);
-        cout << to_string(phil_id) + " posted segabort\n";
-        pthread_mutex_unlock(&output_mutex);
+//        pthread_mutex_lock(&output_mutex);
+//        cout << to_string(phil_id) + " posted segabort\n";
+//        pthread_mutex_unlock(&output_mutex);
     }
 }
 
@@ -69,23 +69,23 @@ void *eat_think_repeat(void *arg) {
         }
         auto *phil_array = new pthread_t[phil_num];
         for (int i = 0; i < phil_num; ++i) {
-            pthread_mutex_lock(&output_mutex);
-            cout << "New thread " + to_string(i) + "\n";
-            pthread_mutex_unlock(&output_mutex);
+//            pthread_mutex_lock(&output_mutex);
+//            cout << "New thread " + to_string(i) + "\n";
+//            pthread_mutex_unlock(&output_mutex);
             pthread_create(&phil_array[i], NULL, &eat_think_repeat, &i);
         }
         this_thread::sleep_for(chrono::milliseconds(dinner_duration * 1000));
-        pthread_mutex_lock(&terminate_mutex);
+//        pthread_mutex_lock(&terminate_mutex);
         terminate_checkpoint = true;
-        pthread_mutex_unlock(&terminate_mutex);
+//        pthread_mutex_unlock(&terminate_mutex);
         try {
             for (int i = 0; i < phil_num; ++i) {
                 pthread_join(phil_array[i], NULL);
             }
         } catch (exception ex) {
-            pthread_mutex_lock(&output_mutex);
+//            pthread_mutex_lock(&output_mutex);
             cout << "loop segabort\n";
-            pthread_mutex_unlock(&output_mutex);
+//            pthread_mutex_unlock(&output_mutex);
         }
         cout << "All philosophers stopped eating.\n";
     }
